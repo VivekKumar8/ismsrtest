@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Route
 metadata:
   name: microsvcruntime
-  namespace: msrnamespace
+  namespace: msrnamespace1
 spec:
-  host: microsvcruntime.usvmapimgmt02.eur.ad.sag
   port:
     targetPort: 5555-tcp
   to:
