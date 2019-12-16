@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 
 oc create -f ${WORKSPACE}/configmap.yaml
