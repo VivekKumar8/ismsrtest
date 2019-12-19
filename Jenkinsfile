@@ -6,9 +6,9 @@ def DISPLAY_NAME
 pipeline {
     agent any 
     environment {
-	    	PROJECT_NAME='DEVOPS'
-		DESCRIPTION='DEVOPS PROJECT'
-		DISPLAY_NAME='DEVOPS PROJECT'
+	    	PROJECT_NAME='devops'
+		DESCRIPTION='devops project'
+		DISPLAY_NAME='devops project'
     }
     stages {
         stage('Initialize'){
