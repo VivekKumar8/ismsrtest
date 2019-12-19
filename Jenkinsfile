@@ -9,9 +9,9 @@ pipeline {
     stages {
         stage('Initialize'){
             steps {
-                sh 'chmod -R 777 ${WORKSPACE}'
-		PROJECT_NAME='DEVOPS'
-		DESCRIPTION='DEVOPS PROJECT'
+                sh 'chmod -R 777 ${WORKSPACE}',
+		PROJECT_NAME='DEVOPS',
+		DESCRIPTION='DEVOPS PROJECT',
 		DISPLAY_NAME='DEVOPS PROJECT'
             }
         }
