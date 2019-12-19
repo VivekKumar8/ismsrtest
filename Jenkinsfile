@@ -5,16 +5,15 @@ def DISPLAY_NAME
 
 pipeline {
     agent any 
-
+    environment {
+	    	PROJECT_NAME='DEVOPS'
+		DESCRIPTION='DEVOPS PROJECT'
+		DISPLAY_NAME='DEVOPS PROJECT'
+    }
     stages {
         stage('Initialize'){
             steps {
                 sh 'chmod -R 777 ${WORKSPACE}'
-		    script {
-		PROJECT_NAME='DEVOPS'
-		DESCRIPTION='DEVOPS PROJECT'
-		DISPLAY_NAME='DEVOPS PROJECT'
-		    }
             }
         }
 	/*	stage('Clean'){
