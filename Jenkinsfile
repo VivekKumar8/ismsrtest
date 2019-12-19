@@ -1,7 +1,7 @@
 
-def PROJECT_NAME='DEVOPS'
-def DESCRIPTION='DEVOPS PROJECT'
-def DISPLAY_NAME='DEVOPS PROJECT'
+def PROJECT_NAME
+def DESCRIPTION
+def DISPLAY_NAME
 
 pipeline {
     agent any 
@@ -10,6 +10,9 @@ pipeline {
         stage('Initialize'){
             steps {
                 sh 'chmod -R 777 ${WORKSPACE}'
+		PROJECT_NAME='DEVOPS'
+		DESCRIPTION='DEVOPS PROJECT'
+		DISPLAY_NAME='DEVOPS PROJECT'
             }
         }
 	/*	stage('Clean'){
