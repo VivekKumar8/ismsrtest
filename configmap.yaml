@@ -5,6 +5,6 @@ data:
 kind: ConfigMap
 metadata:
   name: my-config
-  namespace: msrnamespace1
+  namespace: ${PROJECT_NAME}
   
   
