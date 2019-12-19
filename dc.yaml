@@ -67,6 +67,6 @@ spec:
           - microsvcruntime
         from:
           kind: ImageStreamTag
-          name: {PROJECT_NAME}
+          name: 'microruntime:v2'
           namespace: ${PROJECT_NAME}
       type: ImageChange
