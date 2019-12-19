@@ -9,10 +9,12 @@ pipeline {
     stages {
         stage('Initialize'){
             steps {
-                sh 'chmod -R 777 ${WORKSPACE}',
-		PROJECT_NAME='DEVOPS',
-		DESCRIPTION='DEVOPS PROJECT',
+                sh 'chmod -R 777 ${WORKSPACE}'
+		    script {
+		PROJECT_NAME='DEVOPS'
+		DESCRIPTION='DEVOPS PROJECT'
 		DISPLAY_NAME='DEVOPS PROJECT'
+		    }
             }
         }
 	/*	stage('Clean'){
