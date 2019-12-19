@@ -1,3 +1,8 @@
+
+def PROJECT_NAME=DEVOPS
+def DESCRIPTION=DEVOPS PROJECT
+def DISPLAY_NAME=DEVOPS PROJECT
+
 pipeline {
     agent any 
 
