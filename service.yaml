@@ -4,7 +4,7 @@ metadata:
   labels:
     app: microsvcruntime
   name: microsvcruntimesrv
-  namespace: ${PROJECT_NAME}
+  namespace: {PROJECT_NAME}
 spec:
   clusterIP: 
   ports:
