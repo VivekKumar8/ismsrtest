@@ -68,5 +68,5 @@ spec:
         from:
           kind: ImageStreamTag
           name: 'microruntime:v2'
-          namespace: msrnamespace1
+          namespace: {PROJECT_NAME}
       type: ImageChange
