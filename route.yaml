@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Route
 metadata:
   name: microsvcruntime
-  namespace: msrnamespace1
+  namespace: ${PROJECT_NAME}
 spec:
   port:
     targetPort: 5555-tcp
