@@ -1,15 +1,6 @@
 
-def PROJECT_NAME
-def DESCRIPTION
-def DISPLAY_NAME
-
 pipeline {
     agent any 
-    environment {
-	    	PROJECT_NAME='devops'
-		DESCRIPTION='devops project'
-		DISPLAY_NAME='devops project'
-    }
     stages {
         stage('Initialize'){
             steps {
