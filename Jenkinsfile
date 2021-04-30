@@ -15,7 +15,8 @@ pipeline {
     */
 		stage('Build'){
             steps {
-                sh '${WORKSPACE}/Build.sh'
+               /* sh '${WORKSPACE}/Build.sh'*/
+		sh '${WORKSPACE}/Buildoriginal.sh'
             }
         }
 		stage('Deploy'){
