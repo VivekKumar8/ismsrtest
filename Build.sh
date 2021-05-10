@@ -7,7 +7,7 @@ docker tag microruntime:v2 172.30.1.1:5000/msrdemo/microruntime:v2
 echo "100"
 oc login -u developer -p developer
 echo "101"
-echo oc whoami -t
+echo $(oc whoami -t)
 echo "1001"
 oc project msrdemo
 echo "102"
