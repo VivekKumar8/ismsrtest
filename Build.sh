@@ -5,8 +5,7 @@ oc new-project msrdemo --description="msrdemo" --display-name="msrdemo"
 docker build -t microruntime:v2 -f Dockerfile .
 docker tag microruntime:v2 172.30.1.1:5000/msrdemo/microruntime:v2
 echo "100"
-#oc login -u developer -p developer
-oc login https://vmmsr02.eur.ad.sag:8443 --token=7rN2RBUEN20by3WNKlT654RRhoI4akEOq4QiuTd2-SI
+oc login -u developer -p developer
 echo "101"
 echo $(oc whoami -t)
 echo "1001"
