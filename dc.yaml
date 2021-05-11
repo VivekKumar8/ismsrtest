@@ -62,6 +62,7 @@ spec:
           emptyDir: {}
       dnsPolicy: ClusterFirst
       restartPolicy: Always
+      serviceAccountName: jenkins
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
   test: false
